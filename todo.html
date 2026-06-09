@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="todo.css">
+    <title>Todo App</title>
+</head>
+<body>
+    <div class="todo-app">
+        <h1 id="main-heading">Todo App</h1>
+        <h3 id="task-count"></h3>
+
+        <div class="filter-buttons">
+            <button onclick="setFilter('all')">All</button>
+            <button onclick="setFilter('completed')">Completed</button>
+            <button onclick="setFilter('pending')">Pending</button>
+        </div>
+
+        <div class="grid-container">
+            <input type="text" id="todo-input" placeholder="Enter Todo here">
+            <input type="date" id="todo-date">
+
+            <button class="btn-todo" onclick="addTodo()">Add</button>
+        </div>
+
+        <div class="todo-container grid-container"></div>
+    </div>
+    
+
+    <script src="todo.js"></script>
+</body>
+</html>
